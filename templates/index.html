@@ -40,12 +40,12 @@
     <section>
       <div class="container-fluid">
         <div class="row">
-          <h1 class="text-center">Hemispheres of Mars</h1>
+          <h1 class="text-center">Mars Hemispheres</h1>
           <hr>
           {% for info in mars.hemisphere_image_urls %}
             <div class="col-md-6 text-center">
-              <div class="card text-center" style="border:lightgray; border-width: 1px; border-style: solid;">
-                <img class="card-img-top text-center" style="margin:3px" width=450 src="{{ info.img_url }}">
+              <div class="card text-center" style="margin: 20px; border: lightgray; border-width: 1px; border-style: solid;">
+                <img class="card-img-top text-center" width= 400 src="{{ info.img_url }}">
                   <div class="card-body text-center">
                     <h4 class="card-title" style="text-align:left">{{ info.title }}</h4>
                   </div>
